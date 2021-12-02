@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilo.css" />
+    <title>¿Cuanto tardo?</title>
+  </head>
+  <body>
+    <h1>FISICA DE RUTA</h1>
+
+    <p>
+      Si queres saber cuanto tardare, que distancia existe o a que velocidad
+      debo de ir, yo te lo calculo.
+    </p>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Calcular Tiempo -->
+        <div class="col-xl-4 col-md-6">
+          <h2>¿Cuanto tiempo Tardare?</h2>
+          <form action="" id="form">
+            <input
+              type="number"
+              name="distancia"
+              id="distancia"
+              placeholder="Distancia en Km"
+            />
+            <input
+              type="number"
+              name="velocidad"
+              id="velocidad"
+              placeholder="Velocidad en Km/h"
+            />
+            <button type="button" onclick="getDataUno()">Calcular</button>
+            <button type="reset" class="borrar">Borrar</button>
+          </form>
+        </div>
+        <!-- Calcular Distancia -->
+        <div class="col-xl-4 col-md-6">
+          <h2>¿Que distancia hay?</h2>
+          <form action="" id="form">
+            <input
+              type="number"
+              name="tiempoDos"
+              id="tiempoDos"
+              placeholder="Tiempo en Horas"
+            />
+            <input
+              type="number"
+              name="velocidadDos"
+              id="velocidadDos"
+              placeholder="Velocidad en Km/h"
+            />
+            <button type="button" onclick="getDataDos()">Calcular</button>
+            <button type="reset" class="borrar">Borrar</button>
+          </form>
+        </div>
+        <!-- Calcular Velocidad -->
+        <div class="col-xl-4 col-md-6">
+          <h2>¿A que velocidad debo viajar?</h2>
+          <form action="" id="form">
+            <input
+              type="number"
+              name="distanciaTres"
+              id="distanciaTres"
+              placeholder="Distancia en Km"
+            />
+            <input
+              type="number"
+              name="tiempoTres"
+              id="tiempoTres"
+              placeholder="Tiempo en Horas"
+            />
+            <button type="button" onclick="getDataTres()">Calcular</button>
+            <button type="reset" class="borrar">Borrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./codigo.js"></script>
+  </body>
+</html>
